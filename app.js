@@ -26,7 +26,7 @@ for (let i = 0; i < content.length; i++) {
 
 let minus = document.querySelector(".minus");
 minus.addEventListener("click", () => {
-  if (output.innerHTML == "0,0" || done == true) {
+  if (output.innerHTML == "0,0") {
     output.innerHTML = "-";
     value = "-";
   } else {
