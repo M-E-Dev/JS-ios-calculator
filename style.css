@@ -12,12 +12,18 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.main{
+    height: 100vh;
+    
+}
+
 #container{
+    height: 80vh;
     margin: auto;
-    margin-top: 5%;
-    width: 25%;
-    min-width: 30rem;
-    min-height: 50rem;
+    margin-top: 10%;
+    width: 20%;
+    min-width: 25rem;
+    /* min-height: 50rem; */
     border-radius: 25px;
     display: grid;
     grid-template-columns: repeat(4,20%);
@@ -25,7 +31,7 @@ body{
     justify-content: space-evenly;
     grid-gap: 0.5rem;
     align-items: center;  
-    font-size: 2.5rem;
+    font-size: 2rem;
     background-color:#191918;
     padding-top: 1%; 
 }
@@ -45,6 +51,11 @@ body{
     width: 100%;
     cursor: pointer;
     overflow: hidden;
+}
+
+.content:active{
+    transform: scale(0.9);
+    background-color: #494949;
 }
 
 .content1{
