@@ -2,12 +2,18 @@ let output = document.querySelector(".output");
 let value = "";
 let done = false;
 
+let resultArea = document.getElementById("resultArea")
+setInterval(() => {
+  resultArea.innerHTML = value
+}, 100);
+
 let content = document.querySelectorAll(".content");
 for (let i = 0; i < content.length; i++) {
   content[i].addEventListener("click", () => {
      if(done) {
        output.innerHTML = "";
        done = false;
+       value = "";
      }
     else if (
       output.innerHTML == "0,0" ||
@@ -58,7 +64,9 @@ clear.addEventListener("click", () => {
 
 let equal = document.querySelector(".equal");
 equal.addEventListener("click", () => {
-  output.innerHTML = eval(value);
-  done = true;
-  value = eval(value);
+  if (output.innerHTML != "0,0") {
+    output.innerHTML = eval(value);
+    done = true;
+    value = ""
+  }
 });
