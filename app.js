@@ -26,9 +26,10 @@ for (let i = 0; i < content.length; i++) {
     }
     output.innerHTML += content[i].innerHTML;
     value += content[i].innerHTML;
-    // done = true;
+    // done = true; 
   });
 }
+
 
 let minus = document.querySelector(".minus");
 minus.addEventListener("click", () => {
@@ -42,6 +43,7 @@ minus.addEventListener("click", () => {
   }
 });
 
+
 let operator = document.querySelectorAll(".operator");
 operator.forEach((item) => {
   item.addEventListener("click", () => {
@@ -54,6 +56,7 @@ operator.forEach((item) => {
     }
   });
 });
+
 
 let clear = document.querySelector(".clear");
 clear.addEventListener("click", () => {
