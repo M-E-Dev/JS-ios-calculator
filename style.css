@@ -70,30 +70,37 @@ body{
     grid-column: 3;
     grid-row: 5;
 }
+
 .content4{
     grid-column: 1;
     grid-row: 4;
 }
+
 .content5{
     grid-column: 2;
     grid-row: 4;
 }
+
 .content6{
     grid-column: 3;
     grid-row: 4;
 }
+
 .content7{
     grid-column: 1;
     grid-row: 3;
 }
+
 .content8{
     grid-column: 2;
     grid-row: 3;
 }
+
 .content9{
     grid-column: 3;
     grid-row: 3;
 }
+
 .content10{
     grid-column: 1/3;
     grid-row: 6;
