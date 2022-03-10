@@ -70,6 +70,6 @@ equal.addEventListener("click", () => {
   if (output.innerHTML != "0,0") {
     output.innerHTML = eval(value);
     done = true;
-    value = ""
+    value = eval(value);
   }
 });
