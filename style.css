@@ -229,3 +229,22 @@ body{
 .clear:hover{
     opacity: 1;
 }
+
+@media screen and (max-width: 992px) {
+    #container{
+        height: 60vh;
+        margin: auto;
+        margin-top: 30%;
+        /* width: 20%; */
+        min-width: 20rem;
+        /* min-height: 50rem; */
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: repeat(6,16.6%);
+        /* justify-content: space-around; */
+        align-items: center;  
+        font-size: 2rem;
+        background-color:#191918;
+    }
+  }
